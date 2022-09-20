@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: #d5e1ef;
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    font-family: Outfit, sans-serif;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--dark-blue);
+    text-shadow: 0 0 1px var(--grayish-blue);
+    font-size: 21px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    color:
+            var(--grayish-blue);
+    text-shadow: 0px 0px 1px var(--light-gray);
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top:20px}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+    width: 100%;
+    max-width: 375px; /* switch between 1440px and 375px */
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: var(--white);
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.07), 0 15px 12px rgba(0,0,0,0.03);
+}
+
+.qrcode-image {
+    width: 100%;
+    border-radius: 10px;
+}

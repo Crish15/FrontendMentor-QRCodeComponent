@@ -9,6 +9,7 @@
 
 * {
     font-family: Outfit, sans-serif;
+    box-sizing: border-box;
 }
 
 html,body {
@@ -17,31 +18,37 @@ html,body {
     height: 100%;
 }
 
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--light-gray);
+}
+
 h1 {
     font-weight: 700;
     color: var(--dark-blue);
-    text-shadow: 0 0 1px var(--grayish-blue);
-    font-size: 21px;
+    text-shadow: 0 0 0.0625rem var(--grayish-blue);
+    font-size: 1.3125rem;
 }
 
 p {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color:
             var(--grayish-blue);
-    text-shadow: 0px 0px 1px var(--light-gray);
+    text-shadow: 0 0 0.0625rem var(--light-gray);
 }
 
-.attribution { font-size: 11px; text-align: center; margin-top:20px}
+.attribution { font-size: 0.6875rem; text-align: center; margin-top:1.25rem}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .container {
     width: 100%;
-    max-width: 375px; /* switch between 1440px and 375px */
     height: 100%;
     margin: 0 auto;
-    padding: 0 20px;
-    background: var(--light-gray);
+    padding: 0 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,14 +57,14 @@ p {
 
 .card {
     background: var(--white);
-    padding: 15px;
-    border-radius: 20px;
-    max-width: 300px;
+    padding: 0.9375rem;
+    border-radius: 1.25rem;
+    width: 20.625rem;
     text-align: center;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.07), 0 15px 12px rgba(0,0,0,0.03);
+    box-shadow: 0 1.1875rem 2.375rem rgba(0,0,0,0.07), 0 0.9375rem 0.75rem rgba(0,0,0,0.03);
 }
 
 .qrcode-image {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
